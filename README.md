@@ -1,5 +1,5 @@
-PSBouncyCastle
-==============
+PSBouncyCastle (v1.9.0)
+==================
 
 **PSBouncyCastle** is a PowerShell module that allows you to use the
 crypto functionality from the [Legion of the BouncyCastle](http://www.bouncycastle.org/)
@@ -9,13 +9,19 @@ Currently it covers the X509 certificate functionality, in particular
 allowing you to replace `makecert.exe` (from the Windows SDK) with
 native PowerShell cmdlets.
 
-It accompanies my [series of blog posts](http://blog.differentpla.net/tag/bouncy-castle) about using Bouncy Castle [from C#](http://blog.differentpla.net/b/2013/21/18/how-do-i-create-a-self-signed-certificate-using-bouncy-castle-) and [from PowerShell](http://blog.differentpla.net/b/2013/31/17/how-do-i-use-bouncy-castle-from-powershell-).
+This was written by *RLipscome* and forked to the current version in order to update the Crypto library.
 
-Installation
+Original Source (GitHub)
 --
 
-	Set-Location (Join-Path (Split-Path $PROFILE) 'Modules')
-	git clone https://github.com/rlipscombe/PSBouncyCastle.git
-	Import-Module PSBouncyCastle
+[GitHub - rlipscombe/PSBouncyCastle: PowerShell module for X509 certificates, using BouncyCastle](https://github.com/rlipscombe/PSBouncyCastle)
 
-*Note:* I'll get this listed on [PsGet](http://psget.net/) at some point.
+----
+
+10/20/2022
+Updated to latest binary distribution of Bounce Castle v1.9.0
+Greg Jewett (GitHub: @jewettg)
+
+* I am afraid I do not know how to generate nuspec or nupkg files, so those have been omitted.  
+* BouncyCastle binary (DLL) v1.9.0 updated.
+* Updated PSBouncyCastle.psm1; lines 7-8 to reference new binary version.

@@ -28,3 +28,9 @@ THE SOFTWARE.
 
 Bouncy Castle is licensed under "an adaptation of the MIT X11 License";
 see http://www.bouncycastle.org/csharp/licence.html
+
+----
+
+10/20/2022
+Updated to latest binary distribution of Bounce Castle v1.9.0
+Greg Jewett (GitHub: @jewettg)
